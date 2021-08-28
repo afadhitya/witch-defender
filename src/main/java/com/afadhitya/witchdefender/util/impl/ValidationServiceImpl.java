@@ -12,5 +12,9 @@ public class ValidationServiceImpl implements ValidationService {
         if (request.getPersonOne().getAgeOfDeath() < 0 || request.getPersonTwo().getAgeOfDeath() < 0) {
             throw new ValidationException("Age must not be negative");
         }
+
+        if (request.getPersonOne().getYearOfDeath() < 0 || request.getPersonTwo().getYearOfDeath() < 0) {
+            throw new ValidationException("Year of death must not be negative");
+        }
     }
 }
