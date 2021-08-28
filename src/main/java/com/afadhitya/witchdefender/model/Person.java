@@ -4,7 +4,6 @@ public class Person {
 
     private Integer ageOfDeath;
     private Integer yearOfDeath;
-    private Integer yearOfBorn;
 
     public Integer getAgeOfDeath() {
         return ageOfDeath;
@@ -20,13 +19,5 @@ public class Person {
 
     public void setYearOfDeath(Integer yearOfDeath) {
         this.yearOfDeath = yearOfDeath;
-    }
-
-    public Integer getYearOfBorn() {
-        return yearOfBorn;
-    }
-
-    public void setYearOfBorn(Integer yearOfBorn) {
-        this.yearOfBorn = yearOfBorn;
     }
 }
