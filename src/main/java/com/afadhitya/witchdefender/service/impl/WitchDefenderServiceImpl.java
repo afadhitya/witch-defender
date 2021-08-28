@@ -21,16 +21,16 @@ public class WitchDefenderServiceImpl implements WitchDefenderService {
     public DefendWitchResponse calculateAverageNumberKilledByWitch(DefendWitchRequest request) {
 
         Person personOne = request.getPersonOne();
-        personOne.setYearOfBorn(personOne.getYearOfDeath() - personOne.getAgeOfDeath());
+        Integer yearOfBornPersonOne = personOne.getYearOfDeath() - personOne.getAgeOfDeath();
         Person personTwo = request.getPersonTwo();
-        personTwo.setYearOfBorn(personTwo.getYearOfDeath() - personTwo.getAgeOfDeath());
+        Integer yearOfBornPersonTwo = personTwo.getYearOfDeath() - personTwo.getAgeOfDeath();
 
         VillagerKilledByWitcher villagerKilledOnPersonOneBornDay = new VillagerKilledByWitcher();
-        villagerKilledOnPersonOneBornDay.setYearOfDuty(personOne.getYearOfBorn());
+        villagerKilledOnPersonOneBornDay.setYearOfDuty(yearOfBornPersonOne);
         villagerKilledOnPersonOneBornDay = calculationUtil.calculateVillagerWhichNeedToKilledByWitcher(villagerKilledOnPersonOneBornDay);
 
         VillagerKilledByWitcher villagerKilledOnPersonTwoBornDay = new VillagerKilledByWitcher();
-        villagerKilledOnPersonTwoBornDay.setYearOfDuty(personTwo.getYearOfBorn());
+        villagerKilledOnPersonTwoBornDay.setYearOfDuty(yearOfBornPersonTwo);
         villagerKilledOnPersonTwoBornDay = calculationUtil.calculateVillagerWhichNeedToKilledByWitcher(villagerKilledOnPersonTwoBornDay);
 
         return new DefendWitchResponse(
