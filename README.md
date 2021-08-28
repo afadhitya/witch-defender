@@ -4,6 +4,5 @@ This application are used for prevent the witch to  killed a person from our vil
 
 To access this application please visit below URL
 
-tset
 
 > **[Witch Defender API Docs](https://witch-defender-be.herokuapp.com)**.
