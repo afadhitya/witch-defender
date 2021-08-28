@@ -16,7 +16,6 @@ public class SpringFoxConfig {
     ApiInfo apiInfo() {
         return new ApiInfoBuilder()
                 .title("Witch Defender")
-                .description("Awesome description")
                 .version("1.0.0")
                 .contact(new Contact("", "", "afadhitya@gmail.com"))
                 .build();
