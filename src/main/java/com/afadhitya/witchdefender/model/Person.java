@@ -4,6 +4,7 @@ public class Person {
 
     private Integer ageOfDeath;
     private Integer yearOfDeath;
+    private Integer yearOfBorn;
 
     public Integer getAgeOfDeath() {
         return ageOfDeath;
