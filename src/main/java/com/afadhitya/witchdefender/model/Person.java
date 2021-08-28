@@ -21,4 +21,12 @@ public class Person {
     public void setYearOfDeath(Integer yearOfDeath) {
         this.yearOfDeath = yearOfDeath;
     }
+
+    public Integer getYearOfBorn() {
+        return yearOfBorn;
+    }
+
+    public void setYearOfBorn(Integer yearOfBorn) {
+        this.yearOfBorn = yearOfBorn;
+    }
 }
