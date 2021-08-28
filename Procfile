@@ -1,1 +1,1 @@
-web: java -Dserver.port=$PORT -jar build/libs/witch-defender-0.0.1-SNAPSHOT.jar
+web: java -Dserver.port=$PORT -jar build/libs/witch-defender-1.0.0.jar
